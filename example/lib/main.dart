@@ -46,6 +46,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 type: IdShimerType.type3,
                 thrice: true,
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: IdShimmerGrid(
+                      type: IdShimerType.type3,
+                      thrice: true,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Expanded(
+                    child: IdShimmerGrid(
+                      type: IdShimerType.type3,
+                      thrice: true,
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
